@@ -23,13 +23,13 @@ hist(Birth_Year, probability = TRUE, breaks = 100)
 
 
 # Measure Trip Duration by Gender and year of birth
-#Install packages needed
+#Install packages needed to run the code
 install.packages("ggplot2")
 install.packages("reshape2")
 install.packages("gridExtra")
 install.packages("breakDown")
 
-#Call packages required to plot
+#Call packages required to plot needed to plot data
 library(reshape2)
 library(ggplot2)
 library(breakDown)
@@ -66,4 +66,3 @@ Sex <- table(chicago$Gender)
 table(chicago$Gender)/238948
 prop <- table(chicago$Gender)/238948
 pie(prop, main = 'Distributionof Users by Gender')
-
